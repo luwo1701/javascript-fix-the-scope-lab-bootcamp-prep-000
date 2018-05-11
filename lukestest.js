@@ -6,7 +6,7 @@ var funkyFunction = function() {
   }
 }
 
-var newFunction(){
+var theFunk= newFunction(){
   var innerVariable = "I'm sort of a secret.";
  
   return function innerScope() {

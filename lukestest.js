@@ -8,7 +8,7 @@ var funkyFunction = function() {
 
 var funky = function(){
   var innerVariable = "I'm sort of a secret.";
- 
+  console.log("outer")
   return function innerScope() {
     var inaccessible = "Nothing can touch me.";
  

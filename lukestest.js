@@ -11,8 +11,8 @@ var funky = function(){
   console.log("outer")
   
   return function innerScope() {
+    console.log("innerScope")
     var inaccessible = "Nothing can touch me.";
- 
     return innerVariable;
   }
 }

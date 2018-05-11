@@ -9,6 +9,7 @@ var funkyFunction = function() {
 var funky = function(){
   var innerVariable = "I'm sort of a secret.";
   console.log("outer")
+  
   return function innerScope() {
     var inaccessible = "Nothing can touch me.";
  
@@ -18,4 +19,4 @@ var funky = function(){
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funky()
+var theFunk = funky().innerScope()
